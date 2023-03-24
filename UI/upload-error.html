@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>File Upload Success</title>
+	<title>File Upload Error</title>
 	<style>
 		body {
 			background-color: #F5F5F5;
@@ -9,7 +9,7 @@
 		}
 		
 		.container {
-			max-width: 600px;
+			max-width: 800px;
 			margin: 0 auto;
 			padding: 50px;
 			background-color: rgb(228, 226, 226);
@@ -36,17 +36,21 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		
 		}
 		
-		.success-icon {
-			display: inline-block;
-			font-size: 80px;
-			color: #54a9c3;
+		.error-message {
+			padding: 10px 20px;
+			background-color: #c13636;
+			color: #ebd9d9;
+			font-size: 18px;
+			font-weight: 300;
+			border-radius: 5px;
 			margin-bottom: 30px;
+            letter-spacing: 1px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 		}
-		
-		button {
+
+        .download-button {
             background-color: #327185;
             color: white;
             padding: 12px 20px;
@@ -59,19 +63,18 @@
             letter-spacing: 1px;
 		}
 		
-		button:hover {
+		.download-button:hover {
 			background-color: #54a9c3;
 		}
+
 	</style>
 </head>
 <body>
 	<div class="container">
-		<div class="success-icon">
-			<i class="fa fa-check-circle"></i>
-		</div>
-		<h1>File Upload Successful</h1>
-		<p>Your file has been uploaded successfully.</p>
-		<button>Back to Homepage</button>
+		<h1>File Upload Error</h1>
+		<p>There was an error uploading your file. Please try again.</p>
+		<div class="error-message">File size exceeds the limit. Please upload a smaller file.</div>
+		<button onclick="history.back()" class="download-button">Go Back</button>
 	</div>
 </body>
 </html>
