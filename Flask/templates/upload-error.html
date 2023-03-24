@@ -1,0 +1,18 @@
+<head>
+	<title>File Upload Success</title>
+</head>
+
+{% extends "layout.html" %}
+
+{% block content %}
+<body>
+	<div class="container">
+		<h1>File Upload Error</h1>
+		<p>There was an error uploading your file. Please try again.</p>
+		<div class="error-message">{{message}}</div>
+		<button onclick="history.back()" class="button">Go Back</button>
+	</div>
+</body>
+</html>
+
+{% endblock %}
