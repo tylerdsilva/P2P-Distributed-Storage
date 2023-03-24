@@ -30,7 +30,7 @@
 		
 		p {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 16px;
             font-weight: 300;
             color: #555;
             text-transform: uppercase;
@@ -50,7 +50,16 @@
             text-transform: uppercase;
             letter-spacing: 1px;
 		}
+		.label-form {
+			text-align: center;
+			margin-bottom: 50px;
+			font-weight: 300;
+			color: #555;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 		
+		}
 		.download-button:hover {
 			background-color: #54a9c3;
 		}
@@ -59,6 +68,10 @@
 <body>
 	<div class="container">
 		<h1>File Download</h1>
+		<form>
+			<label for="name" class="label-form">Enter Hash:</label>
+			<input type="text" id="name" name="name" size="80">
+		  </form>
 		<p>Click the button below to download the file.</p>
 		<a href="example-file.pdf" download>
 			<button class="download-button">Download File</button>
