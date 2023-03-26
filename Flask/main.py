@@ -15,7 +15,7 @@ app.secret_key = 'asdoakfjnadlsfma'
 
 @app.route('/is_alive')
 def isAlive():
-    return (True, 200)
+    return True
 
 @app.route('/error')
 def error():
