@@ -1,0 +1,41 @@
+<head>
+	<title>Upload</title>
+	<script src="https://cdn.jsdelivr.net/npm/web3@1.8.2/dist/web3.min.js"></script>
+	<script src="static/js/uploadPage.js"></script>
+</head>
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<body>
+    <div class="container">
+        <h1>Upload a File</h1>
+        <form>
+            <label for="key" class="label-form">Enter Key:</label>
+            <input type="text" class="text-input" name="key" id="key" placeholder="Key">
+			<input type="file" name="file" id="file-input" hidden/>
+            <br/>
+        </form>  
+
+
+		<div class="parent-container" style="display: flex;">
+			<div class="upload-btn-wrapper">
+				<button class="btn" style="width: 155px;" onclick="document.getElementById('file-input').click()">Select File</button>
+			
+
+			</div>
+
+			<div class="upload-btn-wrapper">
+				<button class="btn" style="margin-left: auto; width: 155px;" type="submit" onClick="uploadFile()">Upload</button>
+			</div>
+		</div>
+
+        <div class="upload-progress">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}
+

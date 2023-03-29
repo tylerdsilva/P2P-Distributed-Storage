@@ -36,12 +36,11 @@
       .upload-btn-wrapper {
         position: relative;
         overflow: hidden;
-        display: flex;
-        width: 100%;
+        display: inline-block;
       }
 
       .btn {
-            background-color: #327185;
+        background-color: #327185;
             color: white;
             padding: 12px 20px;
             border: none;
@@ -51,18 +50,19 @@
             font-weight: 300;
             text-transform: uppercase;
             letter-spacing: 1px;
+            margin-left: 325px;
       }
       .btn:hover {
         background-color: #54a9c3;
       }
-      /* .upload-btn-wrapper input[type="file"] {
+      .upload-btn-wrapper input[type="file"] {
         font-size: 100px;
         position: fixed;
         left: 0;
         top: 0;
         opacity: 0;
         cursor: pointer;
-      } */
+      }
 
       .file-name {
         margin-left: 10px;
@@ -111,22 +111,12 @@
         <div class="progress-bar"></div>
       </div><br>
       <div class="upload-btn-wrapper">
-        <input type="file" name="file" id="file-input" onchange="printValue()" hidden/>
-        <button class="btn"><label for="file-input">Select File</label></button>
-        <label id="print"></label>
-
-        <input type="submit"hidden>
-        <button class="btn" style="margin-left: auto;" onclick="uploadFile()">Upload</button>
+        <button class="btn">Select File</button>
+        <input type="file" name="file" onchange="uploadFile()" />
       </div>     
     </div>
 
     <script>
-      function printValue() {
-        const inputElement = document.getElementById('file-input');
-        document.getElementById('print').innerText = inputElement.value;
-      }
-
-
       function uploadFile() {
         // Get the selected file from the input element
         const fileInput = document.getElementById("file-input");
@@ -135,7 +125,6 @@
         // Create a new FormData object and append the file to it
         const formData = new FormData();
         formData.append("file", file);
-        console.log(file);
 
         // Send the file to the server or fetch
         // Here's an example using fetch:
@@ -146,7 +135,6 @@
           .then((response) => response.text())
           .then((result) => {
             console.log(result);
-            window.document.body.innerHTML = result;
           })
           .catch((error) => {
             console.error(error);

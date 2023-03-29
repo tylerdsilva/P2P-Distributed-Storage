@@ -1,0 +1,24 @@
+<head>
+	<title>Download</title>
+	<script src="https://cdn.jsdelivr.net/npm/web3@1.8.2/dist/web3.min.js"></script>
+	<script src="static/js/downloadPage.js"></script>
+</head>
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<body>
+	<div class="container">
+		<h1>File Download</h1>
+		<form>
+			<label for="name" class="label-form">Enter Hash:</label>
+			<input type="text" class="text-input" placeholder="Hash" id="hash" name="hash">
+
+		</form>
+		<p>Click the button below to download the file.</p>
+		<button class="download-button" type="submit" onClick="submitDownload()" >Download File</button>	
+	</div>
+</body>
+
+{% endblock %}
