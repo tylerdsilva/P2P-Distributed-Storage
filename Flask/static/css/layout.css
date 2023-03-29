@@ -124,5 +124,7 @@ button:hover {
     position: relative;
     top:28%;
     margin-left: 6px;
+    height: 5px;
+    width: max-content;
 }
 

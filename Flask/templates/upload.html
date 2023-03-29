@@ -14,17 +14,17 @@
         <form>
             <label for="key" class="label-form">Enter Key:</label>
             <input type="text" class="text-input" name="key" id="key" placeholder="Key">
-			<input type="file" name="file" id="file-input" hidden/>
+			<input type="file" name="file" id="file-input" onChange="fileChange()" hidden/>
             <br/>
         </form>  
 
 
 		<div class="parent-container" style="display: flex;">
-			<div class="upload-btn-wrapper">
+			<div class="upload-btn-wrapper" style="max-width: fit-content;">
 				<button class="btn" style="width: 155px;" onclick="document.getElementById('file-input').click()">Select File</button>
-			
-
+				<div class="selected-file-name" id="selected-file-name">No File</div>
 			</div>
+			
 
 			<div class="upload-btn-wrapper">
 				<button class="btn" style="margin-left: auto; width: 155px;" type="submit" onClick="uploadFile()">Upload</button>

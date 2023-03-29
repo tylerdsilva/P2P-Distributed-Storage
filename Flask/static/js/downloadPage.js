@@ -24,7 +24,7 @@ async function submitDownload() {
         const accounts = await getWalletNumber();
         console.log(accounts[0]);
         hash = document.getElementById("hash").value;
-
+        
         const response = await fetch('/download', {
             method: 'POST',
             headers: {

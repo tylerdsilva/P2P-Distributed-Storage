@@ -1,3 +1,16 @@
+function fileChange() {
+    const fileInput = document.getElementById('file-input');
+    var fileName = 'No File';
+    
+    if (fileInput && fileInput.files.length > 0) {
+        fileName = fileInput.files[0].name;
+    }
+    
+    const selectedFileName = document.getElementById('selected-file-name');
+    selectedFileName.textContent = fileName;
+}
+
+
 async function getWalletNumber() {
     if (window.ethereum) {
         try {
@@ -41,7 +54,7 @@ async function uploadFile() {
             progressBar.style.width = `${percent}%`;
         });
 
-        
+
         xhr.addEventListener("load", function() {
             const reply = JSON.parse(xhr.responseText);
             if (reply.status == true){
