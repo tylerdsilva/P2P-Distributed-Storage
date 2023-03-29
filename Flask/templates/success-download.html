@@ -1,0 +1,20 @@
+
+<head>
+	<title>File Download Success</title>
+</head>
+
+{% extends "layout.html" %}
+
+{% block content %}
+<body>
+	<div class="container">
+		<div class="success-icon">
+			<i class="fa fa-check-circle"></i>
+		</div>
+		<h1>File Download Successful</h1>
+		<p>Your file is being downloaded.</p>
+		<button onclick="history.back()">Go Back</button>
+	</div>
+</body>
+
+{% endblock %}

@@ -58,7 +58,7 @@ async function uploadFile() {
         xhr.addEventListener("load", function() {
             const reply = JSON.parse(xhr.responseText);
             if (reply.status == true){
-                window.location.replace("/success");
+                window.location.replace("/success-upload");
             }
         });
         xhr.send(formData);

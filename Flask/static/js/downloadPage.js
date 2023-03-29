@@ -56,9 +56,12 @@ async function submitDownload() {
             document.body.appendChild(link);
             link.click();
             link.remove();
+            window.location.replace("/success-download");
+            
         }
-    
+        else{
         window.location.replace("/error?message=File%20Lost.");
+        }
 
     } catch (err) {
       console.error(err);
