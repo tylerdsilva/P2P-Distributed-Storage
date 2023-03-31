@@ -141,8 +141,7 @@ def download():
 
 
 if __name__ == '__main__':
-    # authtoken = input("Enter your ngrok authtoken: ")
-    authtoken = "1WOLfDHGnj45HRjf4MsqEBAhCO1_5n7THJw6AtF2ckvBbV21Y"
+    authtoken = input("Enter your ngrok authtoken: ")
 
     ngrok.set_auth_token(authtoken) # Set the authtoken dynamically
     
@@ -150,9 +149,7 @@ if __name__ == '__main__':
     ip = str(http_tunnel.public_url)
     print("Public URL:", ip)
    
-    # peerWallet = input("Please enter your wallet address: ")
-    peerWallet = "0x30F24198d6814A8D2319182f439ff6c7dd581128"
-    
+    peerWallet = input("Please enter your wallet address: ")
     
     allPeers = contract.functions.getAllPeerWallets().call()
     
