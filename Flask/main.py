@@ -7,6 +7,7 @@ from flask_cors import CORS
 import base64
 from web3 import Web3
 import hashlib 
+import math
 
 with open("contract.json", "r") as f:
     contractVariables = json.load(f)
@@ -74,10 +75,7 @@ def upload():
         filepath = os.path.join(UPLOAD_FOLDER, filename)
         file.save(filepath)
 
-        filesize = int(os.stat(filepath).st_size / (1024 * 1024))
-        if filesize == 0:
-            filesize = 1
-
+        filesize = math.ceil(os.stat(filepath).st_size / (1024 * 1024))
 
         result = contract.functions.authenticateKey(key, peerWallet, account, filesize).call()
         
