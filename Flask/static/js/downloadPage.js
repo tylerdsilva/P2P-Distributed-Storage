@@ -60,7 +60,7 @@ async function submitDownload() {
             
         }
         else{
-        window.location.replace("/error?message=File%20Lost.");
+            window.location.replace("/error?message=" + encodeURIComponent(data.message));
         }
 
     } catch (err) {

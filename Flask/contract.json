@@ -1,0 +1,617 @@
+{
+    "address" : "0xE7db3cCf991797d507c1580CFf3CD8C12CA49bb8",
+    "billingAddress" : "0xd58F9B8a008A0763A94aC3146740Ba56391EbF17",
+    "privateKey" : "0xa911784533f7f5afc307a56ef7f91ec8f1e5ed5a5b44d9bd519f28d1be363b39",
+    "abi" : [
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_value",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Transfer",
+            "type": "event"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "hash",
+                    "type": "string"
+                },
+                {
+                    "internalType": "address",
+                    "name": "ownerWallet",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "peerWallet",
+                    "type": "address"
+                }
+            ],
+            "name": "authenticate",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "key",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "peerWallet",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "ownerWallet",
+                    "type": "address"
+                },
+                {
+                    "internalType": "int256",
+                    "name": "fileSize",
+                    "type": "int256"
+                }
+            ],
+            "name": "authenticateKey",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "balance",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "balance",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_owner",
+                    "type": "address"
+                }
+            ],
+            "name": "balanceOf",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "balance",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "wallet",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                }
+            ],
+            "name": "burn",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "clearAll",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "decimals",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "fileInfos",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "hash",
+                    "type": "string"
+                },
+                {
+                    "internalType": "address",
+                    "name": "ownerWallet",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "peerWallet",
+                    "type": "address"
+                },
+                {
+                    "internalType": "int256",
+                    "name": "fileSize",
+                    "type": "int256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getAllPeerWallets",
+            "outputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "",
+                    "type": "address[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getFileInfos",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "string",
+                            "name": "hash",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "ownerWallet",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "peerWallet",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "int256",
+                            "name": "fileSize",
+                            "type": "int256"
+                        }
+                    ],
+                    "internalType": "struct StoreT.FileInfo[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getKeyslist",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "string",
+                            "name": "ip",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "key",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "ownerWallet",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "peerWallet",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "int256",
+                            "name": "size",
+                            "type": "int256"
+                        }
+                    ],
+                    "internalType": "struct StoreT.KeyInfo[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getLastKey",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "Key",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "IP",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getPeerInfos",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "string",
+                            "name": "ip",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "wallet",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "availableStorage",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "isAlive",
+                            "type": "bool"
+                        }
+                    ],
+                    "internalType": "struct StoreT.PeerInfo[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "keysList",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "ip",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "key",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "ownerWallet",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "peerWallet",
+                    "type": "address"
+                },
+                {
+                    "internalType": "int256",
+                    "name": "size",
+                    "type": "int256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_hash",
+                    "type": "string"
+                }
+            ],
+            "name": "locateFile",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "IP",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "name",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "peerInfos",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "ip",
+                    "type": "string"
+                },
+                {
+                    "internalType": "address",
+                    "name": "wallet",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "availableStorage",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "isAlive",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_ip",
+                    "type": "string"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_wallet",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_storage",
+                    "type": "uint256"
+                }
+            ],
+            "name": "registerPeer",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "capacity",
+                    "type": "uint256"
+                }
+            ],
+            "name": "reserveStorage",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "hash",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "key",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "peerWallet",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "ownerWallet",
+                    "type": "address"
+                },
+                {
+                    "internalType": "int256",
+                    "name": "fileSize",
+                    "type": "int256"
+                }
+            ],
+            "name": "storeFile",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "symbol",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "totalSupply",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "wallet",
+                    "type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "ip",
+                    "type": "string"
+                }
+            ],
+            "name": "updateIP",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ]
+
+}
