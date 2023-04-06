@@ -13,7 +13,7 @@ with open("contract.json", "r") as f:
     contractVariables = json.load(f)
 
 # Connect to goerli test network
-w3 = Web3(Web3.HTTPProvider('http://127.0.01:7545'))
+w3 = Web3(Web3.HTTPProvider('https://eth-goerli.g.alchemy.com/v2/3z8uohgYtnQwyxpl1JyOLQzQ_2V3kKo1'))
 
 
 # Load the contract
@@ -105,7 +105,7 @@ def upload():
 
         return jsonify({'status': True, 'hash': hash} )
     
-    print(peerWallet)
+  
     return render_template('upload.html')
 
 @app.route('/download', methods=['GET', 'POST'])
@@ -143,7 +143,7 @@ if __name__ == '__main__':
 
     ngrok.set_auth_token(authtoken) # Set the authtoken dynamically
     
-    http_tunnel = ngrok.connect(6000, options={"bind_tls": True})
+    http_tunnel = ngrok.connect(9000, options={"bind_tls": True})
     ip = str(http_tunnel.public_url)
     print("Public URL:", ip)
    
@@ -154,7 +154,7 @@ if __name__ == '__main__':
 
     if peerWallet not in allPeers:
         print("Welcome New Peer")
-        storage = int(input("Enter the amount of storage you are willing to share: "))
+        storage = int(input("Enter the amount of storage (MB) you are willing to share: "))
 
         gas_estimate = contract.functions.registerPeer(ip, peerWallet, storage).estimate_gas()
 
@@ -183,7 +183,7 @@ if __name__ == '__main__':
 
 
 
-    app.run(port=6000)
+    app.run(port=9000)
   
 
 

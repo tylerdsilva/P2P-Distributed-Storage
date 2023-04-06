@@ -1,7 +1,7 @@
 {
-    "address" : "0xE7db3cCf991797d507c1580CFf3CD8C12CA49bb8",
-    "billingAddress" : "0xd58F9B8a008A0763A94aC3146740Ba56391EbF17",
-    "privateKey" : "0xa911784533f7f5afc307a56ef7f91ec8f1e5ed5a5b44d9bd519f28d1be363b39",
+    "address" : "0xcB1b84bf6030268Fc9AB44497a1f4036F2958899",
+    "billingAddress" : "0x6205448c81479447C489D35911a3221CDbE976e3",
+    "privateKey" : "bd933b54269435a76e17542ef6e82510464a1a71b24568a316ba2fe6c403ffdf",
     "abi" : [
         {
             "inputs": [],
