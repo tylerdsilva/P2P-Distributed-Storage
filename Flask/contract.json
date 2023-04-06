@@ -1,7 +1,7 @@
 {
     "address" : "0xcB1b84bf6030268Fc9AB44497a1f4036F2958899",
-    "billingAddress" : "0x6205448c81479447C489D35911a3221CDbE976e3",
-    "privateKey" : "bd933b54269435a76e17542ef6e82510464a1a71b24568a316ba2fe6c403ffdf",
+    "billingAddress" : "",
+    "privateKey" : "",
     "abi" : [
         {
             "inputs": [],
