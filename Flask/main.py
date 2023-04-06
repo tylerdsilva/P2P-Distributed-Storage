@@ -13,7 +13,7 @@ with open("contract.json", "r") as f:
     contractVariables = json.load(f)
 
 # Connect to goerli test network
-w3 = Web3(Web3.HTTPProvider('https://eth-goerli.g.alchemy.com/v2/3z8uohgYtnQwyxpl1JyOLQzQ_2V3kKo1'))
+w3 = Web3(Web3.HTTPProvider(''))
 
 
 # Load the contract
