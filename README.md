@@ -15,3 +15,9 @@ previous design and takes on more responsibility (see ‘Implementation’ secti
 * **Flask Implementation:** The flask app provides a UI to the client connected to a peer to upload or download files. All authentication with the smart contract happens here using web3 packages. 
 
 # Components on Git
+
+**./Contract**
+This folder contains the solidity smart contract that is deployed on the Goerli test network. It also has the ABI that users can interact with during the file upload and download process.
+
+**./Flask**
+
