@@ -26,5 +26,11 @@ previous design and takes on more responsibility (see ‘Implementation’ secti
 * The HTML files for the different pages that the user interacts with during the file upload and download process.
 
 # Diagrams 
+
+Register Peer
 ![alt text](https://github.com/owaisjh/CMPT756-DistributedStorage/blob/master/Diagrams/register-peer.png)
+
+Upload File
+![alt text](https://github.com/owaisjh/CMPT756-DistributedStorage/blob/master/Diagrams/uploadFlow.jpg)
+
 
