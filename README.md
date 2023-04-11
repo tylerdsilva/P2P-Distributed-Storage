@@ -27,10 +27,10 @@ previous design and takes on more responsibility (see ‘Implementation’ secti
 
 # Diagrams 
 
-Register Peer
+**Register Peer**
 ![alt text](https://github.com/owaisjh/CMPT756-DistributedStorage/blob/master/Diagrams/register-peer.png)
 
-Upload File
+**Upload File**
 ![alt text](https://github.com/owaisjh/CMPT756-DistributedStorage/blob/master/Diagrams/uploadFlow.jpg)
 
 
