@@ -20,7 +20,11 @@ previous design and takes on more responsibility (see ‘Implementation’ secti
 * This folder contains the solidity smart contract that is deployed on the Goerli test network. It also has the ABI that users can interact with during the file upload and download process.
 
 **./Flask**
-* This folder has the main flask app code that users run. 
+* This folder has the main flask app code that peers run. 
 
 **./UI**
 * The HTML files for the different pages that the user interacts with during the file upload and download process.
+
+# Diagrams 
+![alt text](https://github.com/owaisjh/CMPT756-DistributedStorage/blob/master/Diagrams/register-peer.png)
+
