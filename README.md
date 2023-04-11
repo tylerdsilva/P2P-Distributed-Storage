@@ -27,10 +27,16 @@ previous design and takes on more responsibility (see ‘Implementation’ secti
 
 # Diagrams 
 
+*User ABI* <br />
+![alt text](https://github.com/owaisjh/CMPT756-DistributedStorage/blob/master/Diagrams/userABI.png)
+
 *Register Peer* <br />
 ![alt text](https://github.com/owaisjh/CMPT756-DistributedStorage/blob/master/Diagrams/register-peer.png)
 
-<br />*Upload File* <br />
+*Upload File* <br />
 ![alt text](https://github.com/owaisjh/CMPT756-DistributedStorage/blob/master/Diagrams/uploadFlow.jpg)
+
+*Download File* <br />
+![alt text](https://github.com/owaisjh/CMPT756-DistributedStorage/blob/master/Diagrams/downloadFile.png)
 
 
